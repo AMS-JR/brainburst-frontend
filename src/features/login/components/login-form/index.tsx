@@ -24,7 +24,7 @@ const LoginForm = () => {
             if (result.error === "UserAlreadyAuthenticatedException") {
                 navigate("/games/selection");
             } else {
-                toast.error("Password or Email is incorrect", {
+                toast.error("Password or Email is incorrect ", {
                     position: "top-right",
                     autoClose: 5000,
                     theme: "colored",
@@ -62,7 +62,7 @@ const LoginForm = () => {
                             <label htmlFor="email" className={"ml-1"}>Show password</label>
                         </div>
                         <Link to={"/auth/forgot-password"} className={"text-sm"}>
-                            <div>Forgot Password?</div>
+                            <div>Forgot Password abc?</div>
                         </Link>
                     </div>
 
